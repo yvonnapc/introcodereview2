@@ -1,3 +1,7 @@
 body {
   background-color: #DBE6E8;
 }
+
+#location1, #location2, #location3, #location4, #location5 {
+  display:none;
+}

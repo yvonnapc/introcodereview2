@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Vacation Suggester</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootsrap-theme.css" media="screen">
     <link rel="stylesheet" href="css/styles.css"
   </head>
   <body>
@@ -12,49 +11,146 @@
       <header class="page-header">
         <h1>Find out which vacation you should take!</h1>
       </header>
+
       <form>
-      <p class="lead">Which color is your favorite?</p>
-        <select id="color" class="form-control">
-          <option value="0">Red</option>
-          <option value="1">Green</option>
-          <option value="2">White</option>
-          <option value="3">Purple</option>
-          <option value="4">Pickle</option>
-        </select><br>
-      <p class="lead">Pick a favorite food:</p>
-        <select id="food" class="form-control">
-          <option value="0">Paella</option>
-          <option value="1">Gyro</option>
-          <option value="2">Bread and Butter</option>
-          <option value="3">Mexican</option>
-          <option value="4">Wildflowers</option>
-        </select><br>
-      <p class="lead">Your shoe of preference is:</p>
-        <select id="shoe" class="form-control">
-          <option value="0">Sandals</option>
-          <option value="1">Barefoot</option>
-          <option value="2">Snow Shoes</option>
-          <option value="3">Huaraches</option>
-          <option value="4">Stilts</option>
-        </select><br>
-      <p class="lead">Pick your ideal weather conditions:</p>
-        <select id="weather" class="form-control">
-          <option value="0">Sunny</option>
-          <option value="1">Warm</option>
-          <option value="2">Freezing</option>
-          <option value="3">Tropical</option>
-          <option value="4">Blueberry</option>
-        </select><br>
-      <p class="lead">Which word do you like most out of these:</p>
-      <select id="random" class="form-control">
-        <option value="0">Toro</option>
-        <option value="1">Beach</option>
-        <option value="2">Arctic</option>
-        <option value="3">Ancient</option>
-        <option value="4">Djeksoifd</option>
-      </select><br>
-      <button type="button" class="btn btn-success">I'm Outta Here!</button>
+
+      <div class="question1">
+        <p class="lead">Which color is your favorite?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosA" id="choice1" value="0" checked>Red
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosA" id="choice2" value="1" checked>green
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosA" id="choice3" value="2" checked>white
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosA" id="choice4" value="3" checked>purple
+          </label>
+        </div><br>
+      </div>
+
+      <div class="question2">
+        <p class="lead">Pick a favorite food:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosB" id="choice1" value="0" checked>Paella
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosB" id="choice2" value="1" checked>Gyro
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosB" id="choice3" value="2" checked>Bread and Butter
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosB" id="choice4" value="3" checked>Mexican
+          </label>
+        </div><br>
+      </div>
+
+      <div id="question3">
+        <p class="lead">Your shoe of preference is:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosC" id="choice1" value="0" checked>Sandals
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosC" id="choice2" value="1" checked>Barefoot
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosC" id="choice3" value="2" checked>Snow Shoes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosC" id="choice4" value="3" checked>Huaraches
+          </label>
+        </div><br>
+      </div>
+
+      <div class="question4">
+        <p class="lead">Pick your ideal weather conditions:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosD" id="choice3" value="2" checked>Sunny Shoes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosD" id="choice3" value="2" checked>Warm
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosD" id="choice3" value="2" checked>Freezing
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadiosD" id="choice3" value="2" checked>Tropical
+          </label>
+        </div>
+      </div>
+
+      <div id="question5">
+        <p class="lead">Which word do you like most out of these:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="choice1" value="0" checked>Toro
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="choice2" value="1" checked>Beach
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="choice3" value="2" checked>Arctic
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="choice4" value="3" checked>Ancient
+          </label>
+        </div><br>
+      </div>
+        <button type="button" class="btn btn-success" name="button">Hasta La Vista Baby!</button>
       </form>
+    </div>
 
     <div id="location1">
       <h2>España is your destination!</h2>

@@ -1,23 +1,23 @@
-$(document).ready(function(){
-  var total = 0;
-  var userInput;
+$(document).ready(function() {
+
+var sum1;
 
   $("form").submit(function(event) {
-    for(var i = 1; i < 20; i ++){
-      var userInput = $("input[name=optionsRadio" + i + "]:checked").val();
-      userInput = parseInt(userInput);
-      total += userInput;
-      console.log(total);
-  }
+    var sum1 = $('form input[type=radio];checked').val();
+    sum1 = parseInt(input);
+  });
 
-  if (total === 0){
-    $("#location1").append();
-  } else if (total === 1){
-    $("#location2").append();
-  }
-
-  console.log('test');
+console.log('test');
+ if (sum1 === 0){
+  $("#location1").show();
+} else if (total === 1){
+  $("#location2").show();
+}
 
   event.preventDefault();
 });
+});
+
+$(#pancake).click(function(){
+  alert("Enrique, you ought to set sail for South Africa!");
 });
